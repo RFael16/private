@@ -264,3 +264,28 @@ body {
   background-color: #d9534f;
   color: #fff;
 }
+
+/* Ajustes para telas pequenas (celular) */
+@media (max-width: 480px) {
+  #envelope {
+    width: 90vw;    /* 90% da largura da tela */
+    height: auto;   /* ajusta altura automaticamente */
+    top: 50px;
+  }
+
+  .letter {
+    font-size: 1.5rem; /* aumenta o tamanho da fonte */
+  }
+
+  .words.line2,
+  .words.line3,
+  .words.line4 {
+    font-size: 1.3rem; /* textos maiores */
+  }
+
+  .reset button {
+    min-width: 90px;
+    font-size: 12px;
+    padding: 8px;
+  }
+}

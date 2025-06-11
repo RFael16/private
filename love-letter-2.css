@@ -294,3 +294,12 @@ body {
   }
 }
 
+.envlope-wrapper {
+  height: 100vh; /* ocupa toda a altura da viewport */
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;     /* centraliza vertical */
+  padding: 20px;           /* um pouco de espaçamento */
+  box-sizing: border-box;  /* para incluir padding no total */
+}
+

@@ -234,6 +234,11 @@ body {
 
 .envlope-wrapper {
   height: 380px;
+  /* mantém o top e margin default do desktop */
+  position: relative;
+  top: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reset {
@@ -292,14 +297,12 @@ body {
     padding: 8px;
     font-size: 12px;
   }
-}
 
-.envlope-wrapper {
-  height: 100vh; /* ocupa toda a altura da viewport */
-  display: flex;
-  justify-content: center; /* centraliza horizontal */
-  align-items: center;     /* centraliza vertical */
-  padding: 20px;           /* um pouco de espaçamento */
-  box-sizing: border-box;  /* para incluir padding no total */
+  /* centraliza .envlope-wrapper no celular */
+  .envlope-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
-

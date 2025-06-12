@@ -4,19 +4,20 @@ $(document).ready(function () {
   var btn_reset = $("#reset");
 
   envelope.click(function () {
-    open();
+    openEnvelope();
   });
   btn_open.click(function () {
-    open();
+    openEnvelope();
   });
   btn_reset.click(function () {
-    close();
+    closeEnvelope();
   });
 
-  function open() {
+  function openEnvelope() {
     envelope.addClass("open").removeClass("close");
   }
-  function close() {
+
+  function closeEnvelope() {
     envelope.addClass("close").removeClass("open");
   }
 });

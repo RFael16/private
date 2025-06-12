@@ -64,35 +64,32 @@
   position: absolute;
   left: 10%;
   width: 80%;
-  height: 14%;
-  background-color: #ffe6e6; /* Light romantic tone */
+  height: 18%;
+  background-color: #ffe6e6;
+  font-family: "Dancing Script", cursive;
+  font-size: 0.9rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .words.line1 {
-  top: 10%;
-  font-size: 0.5rem;
-  width: 20%;
-  height: 7%;
-  font-size: 0.7rem;
+  top: 5%;
 }
 
 .words.line2 {
-  top: 30%;
-  text-align: center;
-  font-size: 1.1rem;
+  top: 28%;
 }
 
 .words.line3 {
-  top: 50%;
-  font-size: 1.1rem;
-  text-align: center;
+  top: 51%;
 }
 
 .words.line4 {
-  top: 70%;
-  font-size: 1.1rem;
-  text-align: center;
+  top: 74%;
 }
+
 
 .open .flap {
   transform: rotateX(180deg);
@@ -234,11 +231,6 @@ body {
 
 .envlope-wrapper {
   height: 380px;
-  /* mantém o top e margin default do desktop */
-  position: relative;
-  top: 150px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .reset {
@@ -268,41 +260,4 @@ body {
 .reset button:hover {
   background-color: #d9534f;
   color: #fff;
-}
-
-/* Ajustes para telas pequenas (celular) */
-@media (max-width: 600px) {
-  #envelope {
-    width: 90vw;      /* usa 90% da largura da tela */
-    height: auto;     /* deixa altura automática */
-    top: 50px;        /* ajusta a posição */
-  }
-
-  .letter {
-    font-size: 1.5rem; /* aumenta o texto */
-  }
-
-  .words.line1,
-  .words.line2,
-  .words.line3,
-  .words.line4 {
-    font-size: 1.2rem;
-    height: auto;
-    position: static; /* para ficar mais natural no celular */
-    background-color: transparent; /* ou ajusta se quiser */
-  }
-
-  .reset button {
-    min-width: 80px;
-    padding: 8px;
-    font-size: 12px;
-  }
-
-  /* centraliza .envlope-wrapper no celular */
-  .envlope-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
